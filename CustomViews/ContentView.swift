@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let speaker = Speaker(
+        name: "Adam Lea", title: "Managing Director: leaStudios", email: "adam@leastudios.com", twitter: " @adamjohnlea", URL: " https://leastudios.com", imageName: "adamlea", profile: "Adam is the founder of leaStudios, an iOS development studio located in beautiful Boise, Idaho"
+    )
+    
     var body: some View {
-        Text("Hello, world!")
+        SpeakerView(speaker: speaker)
             .padding()
     }
 }
